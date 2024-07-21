@@ -4,6 +4,7 @@ class RedisClient():
     def __init__(self):
         super().__init__()
         self.redis = redis.Redis(host='localhost', port=6379)
+        self.handler = lambda x: x
 
     def subscribe(self, channel):
         pubsub = self.redis.pubsub()
@@ -15,8 +16,11 @@ class RedisClient():
         self.redis.publish(channel, message)
 
     def handle(self, message):
-        print(message)
-        
+        self.handler(message)
+
+    def register_handler(self, handler):
+        self.handler = handler
+
 
 if __name__ == '__main__':
     client = RedisClient()
