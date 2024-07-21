@@ -1,5 +1,5 @@
 # PQ IoT Shield
-QuantumShield IoT is an innovative project aimed at enhancing the security of Internet of Things (IoT) devices using Post-Quantum Cryptography (PQC). As quantum computing technology advances, traditional cryptographic algorithms face increasing vulnerabilities. QuantumShield IoT addresses these challenges by integrating PQC solutions, ensuring robust and future-proof security for IoT ecosystems.
+Quantum IoT Shield is an innovative project aimed at enhancing the security of Internet of Things (IoT) devices using Post-Quantum Cryptography (PQC). As quantum computing technology advances, traditional cryptographic algorithms face increasing vulnerabilities. Quantum IoT Shield  addresses these challenges by integrating PQC solutions, ensuring robust and future-proof security for IoT ecosystems.
 
 Features
 Post-Quantum Encryption: Implements PQC algorithms to secure data transmission between IoT devices, safeguarding against potential quantum computing threats.
