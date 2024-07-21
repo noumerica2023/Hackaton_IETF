@@ -2,8 +2,9 @@ import redis
 
 class RedisClient():
     def __init__(self):
-        super().__init__()
-        self.redis = redis.Redis(host='localhost', port=6379)
+        creds_provider = redis.UsernamePasswordCredentialProvider("default", "ietfietf")
+        self.redis = redis.Redis(host='redis-11699.c241.us-east-1-4.ec2.redns.redis-cloud.com', port= 11699, credential_provider = creds_provider)
+
         self.handler = lambda x: x
 
     def subscribe(self, channel):
